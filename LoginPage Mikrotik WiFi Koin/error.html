@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Error WiFi Koin</title>
+<style>
+:root{
+  --bg:#07111f; --card:#101b2c; --card2:#14233a; --text:#f8fafc;
+  --muted:#9fb0c7; --primary:#22c55e; --primary2:#16a34a; --danger:#ef4444;
+  --warning:#f59e0b; --blue:#38bdf8;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at top,#17345a 0,#07111f 45%,#030712 100%);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:18px}
+.wrap{width:100%;max-width:430px}
+.card{background:linear-gradient(180deg,rgba(20,35,58,.96),rgba(7,17,31,.96));border:1px solid rgba(255,255,255,.08);box-shadow:0 20px 50px rgba(0,0,0,.35);border-radius:24px;padding:22px;overflow:hidden}
+.logo{width:76px;height:76px;margin:0 auto 12px;border-radius:50%;display:grid;place-items:center;background:#fff;color:#111827;font-size:36px;font-weight:900}
+h1{font-size:26px;line-height:1.1;text-align:center;margin:0 0 6px}
+.sub{text-align:center;color:var(--muted);font-size:14px;margin-bottom:18px}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.info div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.07);padding:10px;border-radius:14px;font-size:12px;color:var(--muted);word-break:break-all}
+.info b{display:block;color:#fff;margin-top:3px;font-size:13px}
+.btn{width:100%;border:none;border-radius:15px;padding:14px 16px;margin:8px 0;color:#fff;font-weight:800;font-size:15px;cursor:pointer;text-shadow:0 1px 2px rgba(0,0,0,.28)}
+.btn-green{background:linear-gradient(180deg,#22c55e,#15803d)}
+.btn-blue{background:linear-gradient(180deg,#38bdf8,#0369a1)}
+.btn-orange{background:linear-gradient(180deg,#f59e0b,#b45309)}
+.btn-red{background:linear-gradient(180deg,#ef4444,#991b1b)}
+.btn-gray{background:linear-gradient(180deg,#64748b,#334155)}
+.input{width:100%;padding:14px;border-radius:14px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.06);color:#fff;font-size:15px;outline:none;margin:8px 0 10px}
+.input::placeholder{color:#94a3b8}
+.section-title{font-size:12px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin:12px 0 4px}
+.footer{text-align:center;color:var(--muted);font-size:12px;margin-top:14px}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:999;align-items:center;justify-content:center;padding:16px}
+.modal.show{display:flex}
+.modal-box{width:100%;max-width:430px;background:#0f172a;border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:20px;box-shadow:0 20px 70px rgba(0,0,0,.55)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.stat{background:rgba(255,255,255,.06);border-radius:16px;padding:14px;text-align:center;border:1px solid rgba(255,255,255,.08)}
+.stat span{display:block;color:var(--muted);font-size:12px;margin-top:4px}
+.stat b{font-size:21px;color:#fff}
+.progress{height:14px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden;margin:12px 0}
+.bar{height:100%;width:100%;background:linear-gradient(90deg,#22c55e,#f59e0b);transition:.25s}
+.notice{padding:10px;background:rgba(56,189,248,.13);border:1px solid rgba(56,189,248,.2);border-radius:14px;color:#dff6ff;text-align:center;margin:10px 0;font-size:14px}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+.tab{padding:11px;border-radius:14px;background:rgba(255,255,255,.06);color:#cbd5e1;border:1px solid rgba(255,255,255,.07);font-weight:800;cursor:pointer}
+.tab.active{background:#2563eb;color:#fff}
+.hidden{display:none!important}
+table{width:100%;border-collapse:collapse;overflow:hidden;border-radius:16px;font-size:14px}
+td,th{border-bottom:1px solid rgba(255,255,255,.08);padding:11px;text-align:left}
+th{color:#cbd5e1;background:rgba(255,255,255,.06)}
+a{color:#7dd3fc}
+@media(max-width:420px){.card{padding:18px}.info{grid-template-columns:1fr}h1{font-size:23px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <div class="logo">!</div>
+    <h1>Terjadi Kendala</h1>
+    <div class="notice" style="background:rgba(239,68,68,.16);border-color:rgba(239,68,68,.28)">$(error)</div>
+    <button class="btn btn-green" onclick="location.href='$(link-login)'">Kembali ke Login</button>
+    <div class="footer">WiFi Koin System</div>
+  </div>
+</div>
+</body>
+</html>
